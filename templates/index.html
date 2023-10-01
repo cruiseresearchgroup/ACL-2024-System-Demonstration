@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😴GPT Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+
+</head>
+<body>
+<div class="chat-container">
+    <div class="chat-header">
+        😴GPT: Your Sleep Assistant
+        <div id="usernameDisplay" class="user-status">
+            <!-- Username will be displayed here -->
+        </div>
+    </div>
+    
+    
+    <div id="chatbox">
+        <!-- Chat messages will appear here -->
+    </div>
+    <div class="chat-prompts">
+        <span onclick="insertPrompt('How would be my sleep quality tonight?')">How would be my sleep quality tonight?</span>
+        <span onclick="insertPrompt('How can I enhance my sleep?')">How can I enhance my sleep?</span>
+        <span onclick="insertPrompt('Why do we sleep?')">Why do we sleep?</span>
+    </div>
+    <div class="input-container">
+        <input type="text" id="userInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
