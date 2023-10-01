@@ -16,15 +16,15 @@ pip install -r requirements.txt
 conda install -c conda-forge catboost
 ```
 
-2. Set Environment Variables
+2. Set Environment Variables:
    
 Create a file named api.env in your project root directory and add the following line:
 
 ```OPENAI_API_KEY='your_openai_api_key_here'```
 
-3. Run Flask 
+3. Run Flask: 
 
-To be able to serve the requests coming from the javascript code, you need to configure and run flask server.
+To be able to serve the requests coming from the javascript code, you need to configure and run flask server (change the port if needed).
 
 For Mac:
 
