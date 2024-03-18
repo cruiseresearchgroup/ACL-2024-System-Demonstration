@@ -1,6 +1,6 @@
 # ZzzGPT: An Interactive GPT Approach to Enhance Sleep Quality
 
-This repository has the code for the demonstration submitted for _UbiComp'23 student challenge_.
+This repository has the code for the demonstration submitted for _ACL 2024 System Demonstration_.
 
 ## Getting Started
 Follow these steps to set up and run the application:
